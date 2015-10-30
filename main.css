@@ -92,12 +92,12 @@ footer{
 /** ------------------------------- ID ----------------------------------- **/
 
 
-#mobilMenu{  /* Centering boutons - menu mobile */
+#mobileMenu{  /* Centering boutons - menu mobile */
 	padding-left: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
-#mobilMenu nav ul li{
+#mobileMenu nav ul li{
 	list-style-type:none;
 }
 
