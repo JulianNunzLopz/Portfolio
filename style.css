@@ -8,8 +8,12 @@
 	font-style: italic;
 	src : url('font/Roboto-Italic.ttf');
 }
+html{
+	overflow: hidden;
+}
 body{
 	font-family: "Roboto", sans-serif;
+	overflow: auto;
 }
 
 /*-- Préparation style --*/
@@ -88,14 +92,14 @@ nav a{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 999px){
 #desktopMenu{
 	display: none;
 }
 #mobilMenu nav{
 	display: none;
 }}
-@media screen and (min-width: 900px){
+@media screen and (min-width: 999px){
 #mobilMenu{
 	display: none;
 }}

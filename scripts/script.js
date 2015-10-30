@@ -10,7 +10,7 @@ $(function() {
 	$('.niceScroll').click(function(){
 		var target = $(this).attr('href');
 		var speed = 800;
-		$('body').animate({scrollTop : $(target).offset().top},speed);
+		$('body,html').animate({scrollTop : $(target).offset().top},speed);
 		return false;
 	});	
 
