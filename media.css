@@ -1,45 +1,46 @@
-/** Controle de la hauteur de page **/
+/** --------------------------- MEDIA QUERIES ---------------------------- **/
+
+
+/** Height control ------------------------------------------------------- **/
 
 @media screen and (max-height: 1200px){
 section{
-	min-height: 1200px;
+	min-height: 1135px;
 }
 .content{
-	min-height: 1000px;
+	min-height: 900px;
 }}
 @media screen and (max-height: 999px){
 section{
-	min-height: 999px;
+	min-height: 934px;
 }
 .content{
-	min-height: 799px;
+	min-height: 699px;
 }}
 @media screen and (max-height: 720px){
 section{
-	min-height: 720px;
+	min-height: 655px;
 }
 .content{
-	min-height: 520px;
+	min-height: 420px;
 }}
 @media screen and (max-height: 570px){
 section{
-	min-height: 570px;
+	min-height: 505px;
 }
 .content{
-	min-height: 370px;
+	min-height: 270px;
 }}
 @media screen and (max-height: 480px){
 section{
-	min-height: 480px;
+	min-height: 415px;
 }
 .content{
-	min-height: 280px;
+	min-height: 180px;
 }}
 
 
-
-
-/** Controle de la largeur du contenu **/
+/** Width control -------------------------------------------------------- **/
 
 @media screen and (max-width: 1200px){
 .container{
@@ -59,9 +60,7 @@ section{
 }}
 
 
-
-
-/** Changement menu mobile/desktop **/
+/** Change menu - mobile | desktop --------------------------------------- **/
 
 @media screen and (max-width: 999px){
 #desktopMenu{
@@ -74,3 +73,17 @@ section{
 #mobilMenu{
 	display: none;
 }}
+
+
+/** ------------------------------- FONT --------------------------------- **/
+
+
+@font-face{
+	font-family: "Roboto";
+	font-style: normal;
+	src : url('font/Roboto-Bold.ttf');}
+@font-face{
+	font-family: "Roboto";
+	font-style: italic;
+	src : url('font/Roboto-Italic.ttf');
+}

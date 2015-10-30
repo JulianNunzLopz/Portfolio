@@ -39,15 +39,6 @@ h1{
 	padding-bottom: 1.4em;
 }
 
-@font-face{
-	font-family: "Roboto";
-	font-style: normal;
-	src : url('font/Roboto-Bold.ttf');}
-@font-face{
-	font-family: "Roboto";
-	font-style: italic;
-	src : url('font/Roboto-Italic.ttf');
-}
 
 /** Structure ------------------------------------------------------------ **/
 
@@ -66,7 +57,7 @@ header{
 	width: 100%;
 	position: fixed;
 
-	/* Ombrage */
+	/* Shadow */
 	-moz-box-shadow: 0px 2px 25px #555;
 	-webkit-box-shadow: 0px 2px 25px #555;
 	-o-box-shadow: 0px 2px 25px #555;
@@ -76,7 +67,7 @@ header{
 }
 
 section{
-	/* Ombrage */
+	/* Shadow */
 	-moz-box-shadow: inset 0px 4px 25px 0px #555;
 	-webkit-box-shadow: inset 0px 4px 25px 0px #555;
 	-o-box-shadow: inset 0px 4px 25px 0px #555;
@@ -88,7 +79,7 @@ section{
 footer{
 	background-color: #999999;
 
-	/* Ombrage */
+	/* Shadow */
 	-moz-box-shadow: 0px -1px 8px #555;
 	-webkit-box-shadow: 0px -1px 8px #555;
 	-o-box-shadow: 0px -1px 8px #555;
@@ -101,7 +92,7 @@ footer{
 /** ------------------------------- ID ----------------------------------- **/
 
 
-#mobilMenu{  /* Centrage bouton menu mobile */
+#mobilMenu{  /* Centering boutons - menu mobile */
 	padding-left: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -110,74 +101,70 @@ footer{
 	list-style-type:none;
 }
 
-#desktopMenu nav a{  /* Espacement bouton menu desktop */
+#desktopMenu nav a{  /* Spacing buttons - desktop menu */
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 }
 
-#home{
-	padding-top: 4em;
+#home div:first-child{
+	padding-top: 4%;
 }
 
 
-/** ----------------------------- CLASSE --------------------------------- **/
+/** ------------------------------ CLASS --------------------------------- **/
 
 
 /** Style ---------------------------------------------------------------- **/
 
-.whiteBg{  /* Couleur claire */
+.whiteBg{  
 	background: #E5FFF1;
 }
 .whiteText{
 	color: #E5FFF1;
 }
 
-.darkBg{  /* Couleur sombre */
+.darkBg{  
 	background: #2CCE7C;
 }
 .darkText{
 	color: #014921;
 }
 
-.imgBg{  /* Image de fond */
+.imgBg{  
 	background-image: url("img/fond.PNG");
 }
 
+
 /** Position ------------------------------------------------------------- **/
 
-.container{  /* Alignement horizontal - texte */
+.container{  /* Horizontal alignement - text */
 	text-align: center;
 }
-.centerBlock{  /* Alignement horizontal - block */
+.content{
+	padding-top: 4%;
+}
+.centerBlock{  /* Horizontal alignement - block */
 	margin-left: auto;
 	margin-right: auto;
 }
-.verticalAlignText{  /*Alignement vertical - texte */
+.verticalAlignText{  /* Vertical alignment  - text */
 	height: 2.5em;
 	line-height: 2.5em;
 }
 
 
-.inline3{  /* 3 elements sur une ligne */
+.inline3{  /* 3 elements on a line */
 	width: 33%;
 
 	display: inline-block;
 	vertical-align: top;
 }
-.inline2{  /* 2 elements sur une ligne */
+.inline2{  /* 2 elements on a line */
 	width: 49.5%;
 
 	display: inline-block;
 	vertical-align: top;
 }
-@media screen and (max-width: 1000px){
-	/* passage en colonne des div "inline" */
-.inline3{
-	width: 100%;
-}
-.inline2{
-	width: 100%;
-}}
 
 
 .circle{
@@ -185,13 +172,13 @@ footer{
 	height: 13em;
 	margin-top: 0.5em;
 
-	/* Cercle */
+	/* Circle */
     -webkit-border-radius: 50% / 50%;
     -moz-border-radius:    50% / 50%;
     -o-border-radius:      50% / 50%;
     border-radius:         50% / 50%;
 
-    /* Ombrage */
+    /* Shadow */
     -moz-box-shadow: 0px 10px 25px #555;
     -webkit-box-shadow: 0px 10px 25px #555;
     -o-box-shadow: 0px 10px 25px #555;
@@ -208,7 +195,7 @@ footer{
 }
 
 
-/** ------------------------------ FORMULAIRE ---------------------------- **/
+/** --------------------------------- FORM ------------------------------- **/
 
 
 .smart-green {
@@ -243,4 +230,15 @@ footer{
     font-family: "Roboto", sans-serif;
 }.smart-green .button:hover {
     opacity: 0.6;
+}
+
+/** -------------------------------- MOBILE ------------------------------ **/
+
+@media screen and (max-width: 1000px){
+.inline3{
+	width: 100%;
+}
+.inline2{
+	width: 100%;
+}
 }
