@@ -1,0 +1,76 @@
+/** Controle de la hauteur de page **/
+
+@media screen and (max-height: 1200px){
+section{
+	min-height: 1200px;
+}
+.content{
+	min-height: 1000px;
+}}
+@media screen and (max-height: 999px){
+section{
+	min-height: 999px;
+}
+.content{
+	min-height: 799px;
+}}
+@media screen and (max-height: 720px){
+section{
+	min-height: 720px;
+}
+.content{
+	min-height: 520px;
+}}
+@media screen and (max-height: 570px){
+section{
+	min-height: 570px;
+}
+.content{
+	min-height: 370px;
+}}
+@media screen and (max-height: 480px){
+section{
+	min-height: 480px;
+}
+.content{
+	min-height: 280px;
+}}
+
+
+
+
+/** Controle de la largeur du contenu **/
+
+@media screen and (max-width: 1200px){
+.container{
+	max-width: 700px;
+}}
+@media screen and (max-width: 992px){
+.container{
+	max-width: 492px;
+}}
+@media screen and (max-width: 768px){
+.container{
+	max-width: 450px;
+}}
+@media screen and (max-width: 480px){
+.container{
+	max-width: 350px;
+}}
+
+
+
+
+/** Changement menu mobile/desktop **/
+
+@media screen and (max-width: 999px){
+#desktopMenu{
+	display: none;
+}
+#mobilMenu nav{
+	display: none;
+}}
+@media screen and (min-width: 1000px){
+#mobilMenu{
+	display: none;
+}}
