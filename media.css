@@ -68,9 +68,15 @@ section{
 }
 #mobileMenu nav{
 	display: none;
+}
+#desktopFooter{
+	display: none;
 }}
 @media screen and (min-width: 1000px){
 #mobileMenu{
+	display: none;
+}
+#mobileFooter{
 	display: none;
 }}
 

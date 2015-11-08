@@ -24,13 +24,13 @@ a{
 	color: #E5FEF1;
 }
 
-img:hover{
+div>img:hover{
 	opacity: 0.6;
 }
 
 h1{
 	padding-top: 2.8em;
-	padding-bottom: 3.8em;
+	padding-bottom: 3em;
 }h2{
 	padding-top: 1em;
 	padding-bottom: 1.6em;
@@ -42,9 +42,6 @@ h1{
 
 /** Structure ------------------------------------------------------------ **/
 
-html{
-	overflow: hidden;
-}
 
 body{
 	font-family: "Roboto", sans-serif;
@@ -116,22 +113,26 @@ footer{
 
 /** Style ---------------------------------------------------------------- **/
 
-.whiteBg{  
+.lightBg{  
 	background: #E5FFF1;
 }
-.whiteText{
+.lightText{
 	color: #E5FFF1;
 }
 
 .darkBg{  
-	background: #2CCE7C;
+	background: #00e676;
 }
 .darkText{
-	color: #014921;
+	/*color: #014921;*/
+	color: #00C853;
 }
 
 .imgBg{  
 	background-image: url("img/fond.PNG");
+}
+.imgBg1{
+	background-image: url("img/fond1.PNG");
 }
 
 
@@ -191,7 +192,7 @@ footer{
 }
 
 .arrow{
-	margin-top: 1em;
+	padding-top: 1.5em;
 }
 
 
@@ -212,14 +213,14 @@ footer{
     height: 30px;
     line-height:15px;
     width: 100%;
-    border: 1px solid #2CCE7C;
+    border: 1px solid #00e676;
     background: #E5FFF1;
     font-family: "Roboto", sans-serif;
 }.smart-green textarea{
     height:100px;
     padding-top: 10px;
 }.smart-green .button {
-    background-color: #2CCE7C;
+    background-color: #00e676;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-border-radius: 5px;
