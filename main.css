@@ -199,16 +199,16 @@ footer{
 /** --------------------------------- FORM ------------------------------- **/
 
 
-.smart-green {
+.form {
     margin-left:auto;
     margin-right:auto;
     margin-top:1.5em;
     max-width: 500px;
-}.smart-green label {
+}.form label {
     display: block;
     margin: 0px 0px 5px;
-}.smart-green input[type="text"], .smart-green input[type="email"], 
-  .smart-green textarea, .smart-green select {
+}.form input[type="text"], .form input[type="email"], 
+  .form textarea, .form select {
     color: #555;
     height: 30px;
     line-height:15px;
@@ -216,20 +216,31 @@ footer{
     border: 1px solid #00e676;
     background: #E5FFF1;
     font-family: "Roboto", sans-serif;
-}.smart-green textarea{
+}.form textarea{
     height:100px;
     padding-top: 10px;
-}.smart-green .button {
+}.form .button {
     background-color: #00e676;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-border-radius: 5px;
-    border: none;
-    padding: 10px 25px 10px 25px;
-    color: #FFF;
-    text-shadow: 1px 1px 1px #949494;
+
+    width: 8em;
+	height: 8em;
+
+    border: none;    
+
+	/* Circle */
+    -webkit-border-radius: 50% / 50%;
+    -moz-border-radius:    50% / 50%;
+    -o-border-radius:      50% / 50%;
+    border-radius:         50% / 50%;
+
+    /* Shadow */
+    -moz-box-shadow: 0px 10px 25px #555;
+    -webkit-box-shadow: 0px 10px 25px #555;
+    -o-box-shadow: 0px 10px 25px #555;
+    box-shadow: 0px 10px 25px #555;
+
     font-family: "Roboto", sans-serif;
-}.smart-green .button:hover {
+}.form .button:hover {
     opacity: 0.6;
 }
 
