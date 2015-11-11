@@ -3,10 +3,6 @@
 
 /** Preset --------------------------------------------------------------- **/
 
-*{
-	margin : 0;
-	padding : 0;
-}
 
 a{
 	text-decoration: none;
@@ -25,12 +21,13 @@ a{
 }
 
 div>img:hover{
+	cursor: pointer;
 	opacity: 0.6;
 }
 
 h1{
-	padding-top: 2.8em;
-	padding-bottom: 3em;
+	padding-top: 2.3em;
+	padding-bottom: 2.5em;
 }h2{
 	padding-top: 1em;
 	padding-bottom: 1.6em;
@@ -38,7 +35,6 @@ h1{
 	padding-top: 1.4em;	
 	padding-bottom: 1.4em;
 }
-
 
 /** Structure ------------------------------------------------------------ **/
 
@@ -141,9 +137,7 @@ footer{
 .container{  /* Horizontal alignement - text */
 	text-align: center;
 }
-.content{
-	padding-top: 4%;
-}
+
 .centerBlock{  /* Horizontal alignement - block */
 	margin-left: auto;
 	margin-right: auto;
@@ -152,7 +146,6 @@ footer{
 	height: 2.5em;
 	line-height: 2.5em;
 }
-
 
 .inline3{  /* 3 elements on a line */
 	width: 33%;
@@ -167,11 +160,16 @@ footer{
 	vertical-align: top;
 }
 
+.content>p{
+	font-size: 95%;
+}
 
 .circle{
-	width: 13em;
-	height: 13em;
+	width: 14em;
+	height: 14em;
 	margin-top: 0.5em;
+
+
 
 	/* Circle */
     -webkit-border-radius: 50% / 50%;
@@ -186,9 +184,15 @@ footer{
     box-shadow: 0px 10px 25px #555;
 }
 .bigDiv{
-	width: 16em;
-	height: 16em;
+	width: 16.5em;
+	height: 16.5em;
 	margin-top: 1em;
+}
+.contactCircle{
+	margin-top: 3em;
+
+	width: 15em;
+	height: 15em;
 }
 
 .arrow{
@@ -211,11 +215,12 @@ footer{
   .form textarea, .form select {
     color: #555;
     height: 30px;
-    line-height:15px;
+    
     width: 100%;
     border: 1px solid #00e676;
     background: #E5FFF1;
     font-family: "Roboto", sans-serif;
+    font-size: 100%;
 }.form textarea{
     height:100px;
     padding-top: 10px;
@@ -240,6 +245,7 @@ footer{
     box-shadow: 0px 10px 25px #555;
 
     font-family: "Roboto", sans-serif;
+    font-size: 100%;
 }.form .button:hover {
     opacity: 0.6;
 }
@@ -247,10 +253,45 @@ footer{
 /** -------------------------------- MOBILE ------------------------------ **/
 
 @media screen and (max-width: 1000px){
+header{
+	font-size: 130%;
+}
+header a{
+	font-size: 180%;
+}
+.content>p{
+	font-size: 50%;
+}
+.content>div>h2{
+	font-size: 160%;
+}
+.contact>h1{
+	font-size: 170%;
+}
+.circle{
+	width: 16.5em;
+	height: 16.5em;
+}
+.circle>h3{
+	font-size: 145%;
+}
+.circle>p{
+	font-size: 130%;	
+}
+.bigDiv{
+	width: 19em;
+	height: 19em;
+}
+.contactCircle{
+	width: 18em;
+	height: 18em;
+}
+#home div:first-child{
+	padding-top: 10%;
+}
 .inline3{
 	width: 100%;
 }
 .inline2{
 	width: 100%;
-}
-}
+}}

@@ -44,19 +44,15 @@ section{
 
 @media screen and (max-width: 1200px){
 .container{
-	max-width: 700px;
+	max-width: 950px;
 }}
 @media screen and (max-width: 992px){
 .container{
-	max-width: 492px;
+	max-width: 682px;
 }}
 @media screen and (max-width: 768px){
 .container{
-	max-width: 450px;
-}}
-@media screen and (max-width: 480px){
-.container{
-	max-width: 350px;
+	max-width: 550px;
 }}
 
 
