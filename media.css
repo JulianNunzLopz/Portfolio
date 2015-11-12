@@ -3,62 +3,46 @@
 
 /** Height control ------------------------------------------------------- **/
 
-@media screen and (max-height: 1200px){
-section{
-	min-height: 1135px;
-}
-.content{
-	min-height: 900px;
+@media screen and (min-height: 961px){
+.container{
+	min-height: 760px;
 }}
-@media screen and (max-height: 999px){
-section{
-	min-height: 934px;
-}
-.content{
-	min-height: 699px;
+@media screen and (max-height: 961px){
+.container{
+	min-height: 760px;
 }}
-@media screen and (max-height: 720px){
-section{
-	min-height: 655px;
-}
-.content{
-	min-height: 420px;
+@media screen and (max-height: 769px){
+.container{
+	min-height: 569px;
 }}
-@media screen and (max-height: 570px){
-section{
-	min-height: 505px;
-}
-.content{
-	min-height: 270px;
+@media screen and (max-height: 481px){
+.container{
+	min-height: 271px;
 }}
-@media screen and (max-height: 480px){
-section{
-	min-height: 415px;
-}
-.content{
-	min-height: 180px;
-}}
-
 
 /** Width control -------------------------------------------------------- **/
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1250px){
 .container{
-	max-width: 950px;
+	max-width: 960px;
 }}
-@media screen and (max-width: 992px){
+@media screen and (max-width: 961px){
 .container{
-	max-width: 682px;
+	max-width: 720px;
 }}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
 .container{
-	max-width: 550px;
+	max-width: 560px;
+}}
+@media screen and (max-width: 481px){
+.container{
+	max-width: 360px;
 }}
 
 
 /** Change menu - mobile | desktop --------------------------------------- **/
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 768px){
 #desktopMenu{
 	display: none;
 }
@@ -68,7 +52,7 @@ section{
 #desktopFooter{
 	display: none;
 }}
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 769px){
 #mobileMenu{
 	display: none;
 }

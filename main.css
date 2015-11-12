@@ -3,7 +3,6 @@
 
 /** Preset --------------------------------------------------------------- **/
 
-
 a{
 	text-decoration: none;
 	color: #E5FEF1;
@@ -25,19 +24,26 @@ div>img:hover{
 	opacity: 0.6;
 }
 
-h1{
-	padding-top: 2.3em;
-	padding-bottom: 2.5em;
-}h2{
-	padding-top: 1em;
-	padding-bottom: 1.6em;
-}h3{
-	padding-top: 1.4em;	
-	padding-bottom: 1.4em;
+p{
+	font-size: 1em;
+	margin: 0;
 }
 
-/** Structure ------------------------------------------------------------ **/
+h1{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
 
+h2{
+	padding-top: .5em;
+}
+
+h1 span, h2 span, h3 span{
+	display:block;
+}
+
+
+/** Structure ------------------------------------------------------------ **/
 
 body{
 	font-family: "Roboto", sans-serif;
@@ -49,6 +55,8 @@ header{
 
 	width: 100%;
 	position: fixed;
+
+	z-index:1;
 
 	/* Shadow */
 	-moz-box-shadow: 0px 2px 25px #555;
@@ -99,10 +107,6 @@ footer{
 	padding-right: 0.5em;
 }
 
-#home div:first-child{
-	padding-top: 4%;
-}
-
 
 /** ------------------------------ CLASS --------------------------------- **/
 
@@ -120,7 +124,6 @@ footer{
 	background: #00e676;
 }
 .darkText{
-	/*color: #014921;*/
 	color: #00C853;
 }
 
@@ -139,6 +142,8 @@ footer{
 }
 
 .centerBlock{  /* Horizontal alignement - block */
+	text-align: center;
+
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -148,28 +153,38 @@ footer{
 }
 
 .inline3{  /* 3 elements on a line */
-	width: 33%;
+	width: 33.33333%;
 
-	display: inline-block;
 	vertical-align: top;
+
+	display: block;
+	float: left;
+	
 }
 .inline2{  /* 2 elements on a line */
-	width: 49.5%;
+	width: 50%;
 
-	display: inline-block;
 	vertical-align: top;
+	
+	display: block;
+	float: left;
 }
+.inline1{  /* 1 element on a line */
+	width: 100%;
 
-.content>p{
-	font-size: 95%;
+	vertical-align: top;
+	
+	display: block;
+	float: left;
 }
 
 .circle{
-	width: 14em;
-	height: 14em;
-	margin-top: 0.5em;
+	font-size: 1em;
 
+	width: 16.5em;
+	height: 16.5em;
 
+	margin-top: 5em;
 
 	/* Circle */
     -webkit-border-radius: 50% / 50%;
@@ -183,19 +198,35 @@ footer{
     -o-box-shadow: 0px 10px 25px #555;
     box-shadow: 0px 10px 25px #555;
 }
-.bigDiv{
-	width: 16.5em;
-	height: 16.5em;
-	margin-top: 1em;
+.circle>h3{
+	padding-top: 1.5em;
+	padding-bottom: 1em;
 }
-.contactCircle{
-	margin-top: 3em;
+.circle>p{
+	padding-bottom: 1em;
+}
+.circle>i p{
+	padding-top: 2em;
+}
+.circle>i p span{
+	display: block;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
 
-	width: 15em;
-	height: 15em;
+.bigDiv{
+	width: 17.5em;
+	height: 17.5em;
 }
 
 .arrow{
+	padding-top: .5em;
+}
+
+.ico{
+	display: block;
+	padding-bottom: 1em;
+}.circle .ico:first-child{
 	padding-top: 1.5em;
 }
 
@@ -220,7 +251,6 @@ footer{
     border: 1px solid #00e676;
     background: #E5FFF1;
     font-family: "Roboto", sans-serif;
-    font-size: 100%;
 }.form textarea{
     height:100px;
     padding-top: 10px;
@@ -245,53 +275,79 @@ footer{
     box-shadow: 0px 10px 25px #555;
 
     font-family: "Roboto", sans-serif;
-    font-size: 100%;
 }.form .button:hover {
     opacity: 0.6;
 }
 
+
 /** -------------------------------- MOBILE ------------------------------ **/
 
-@media screen and (max-width: 1000px){
-header{
-	font-size: 130%;
+
+@media screen and (max-width: 769px){
+.container{
+	min-height: 200vw;
 }
-header a{
-	font-size: 180%;
+#contact .container,#home .container{
+	min-height: 150vw;
 }
-.content>p{
-	font-size: 50%;
+h1{
+	padding-top: 4.5vw;
+	padding-bottom: 4.5vw;
 }
-.content>div>h2{
-	font-size: 160%;
+#home h1{
+	padding-top: 20vw;
 }
-.contact>h1{
-	font-size: 170%;
+p{
+	font-size: 3.5vw;
 }
-.circle{
-	width: 16.5em;
-	height: 16.5em;
-}
-.circle>h3{
-	font-size: 145%;
-}
-.circle>p{
-	font-size: 130%;	
-}
-.bigDiv{
-	width: 19em;
-	height: 19em;
-}
-.contactCircle{
-	width: 18em;
-	height: 18em;
-}
-#home div:first-child{
-	padding-top: 10%;
+a{
+	font-size: 4.5vw;
 }
 .inline3{
 	width: 100%;
 }
 .inline2{
 	width: 100%;
+}
+.circle{
+	font-size: 3.5vw;
+
+	width: 50vw;
+	height: 50vw;
+
+	margin-top: 15vw;
+}
+.circle>h3{
+	padding-top: 4.5vw;
+	padding-bottom: 3vw;
+}
+.circle>p{
+	padding-bottom: 3vw;
+}
+.circle>i p{
+	padding-top: 5vw;
+}
+.circle>i p span{
+	display: block;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+}
+.bigDiv{
+	width: 60vw;
+	height: 60vw;
+}
+.arrow{
+	margin-top: 1.5vw;
+}
+.ico{
+	padding-bottom: 3vw;
+}.circle .ico:first-child{
+	padding-top: 5vw;
+}.ico>img{
+	width: 6vw;
+	height: 6vw;
+}
+.form{
+	width: 70%;
+	font-size: 3.5vw;
 }}

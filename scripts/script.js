@@ -8,6 +8,22 @@ $(function() {
 		return false;
 	});
 
+/** Mobile resize -------------------------------------------------------- **/
+
+	function resizeMedia(){
+		if (window.matchMedia("(max-width: 960px)").matches){
+			$('.inline3 + .inline3 + .inline3').removeClass('inline3').addClass('inline1');
+			$('.inline3').addClass('inline2').removeClass('inline3');
+		}
+		else if (window.matchMedia("(min-width: 959px)").matches){
+			$('.inline2 + .inline1').prev().removeClass('inline2').addClass('inline3');
+			$('.inline3 + .inline1').prev().prev().removeClass('inline2').addClass('inline3');
+			$('.inline1').removeClass('inline1').addClass('inline3');
+		}
+	}
+
+	window.addEventListener('resize', resizeMedia, false);
+
 /** Mobile navigation ---------------------------------------------------- **/
 
 	$(document).mouseup(function (e){
