@@ -1,4 +1,12 @@
+/** ------------------------------- SCRIPT ------------------------------- **/
+
+
 $(function() {
+
+
+/** ------------------------------- ANIMATE ------------------------------ **/
+
+
 	jQuery.scrollSpeed(100, 800);
 
 	$('.niceScroll').click(function(){
@@ -7,6 +15,38 @@ $(function() {
 		$('body,html').animate({scrollTop : $(target).offset().top},speed);
 		return false;
 	});
+
+
+/** -------------------------------- FORM -------------------------------- **/
+
+
+	$('.button').click(function(){
+		var form = $(this.form);
+		if(form[0].name.value!=''){
+			if(form[0].email.value.indexOf('@')>0){
+				if(form[0].message.value!=''){
+					form.submit();
+				}else{
+					form[0].message.value = "Veuillez rédiger un message";
+				}
+			}else{
+				form[0].email.value = "Veuillez renseigner votre adresse email";
+				if(form[0].message.value == ''){
+					form[0].message.value = "Veuillez rédiger un message";
+				}
+			}
+		}else{
+			form[0].name.value = "Veuillez renseigner votre nom";
+			if(form[0].email.value == '' && form[0].message.value == ''){
+				form[0].email.value = "Veuillez renseigner votre adresse email";
+				form[0].message.value = "Veuillez rédiger un message";
+			}
+		}
+	});
+
+
+/** ------------------------------- MOBILE ------------------------------- **/
+
 
 /** Mobile resize -------------------------------------------------------- **/
 
@@ -23,6 +63,7 @@ $(function() {
 	}
 
 	window.addEventListener('resize', resizeMedia, false);
+
 
 /** Mobile navigation ---------------------------------------------------- **/
 
