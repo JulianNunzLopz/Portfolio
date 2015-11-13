@@ -44,6 +44,14 @@ $(function() {
 		}
 	});
 
+	$('input, textarea').click(function(){
+		if(this.value!=''){
+			if(this.value.indexOf('Veuillez r')!=-1){
+				this.value='';
+			}
+		}
+	});
+
 
 /** ------------------------------- MOBILE ------------------------------- **/
 
